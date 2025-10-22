@@ -1,20 +1,24 @@
 {
-  "name": "@zd~/cli",
-  "version": "0.0.7",
-  "description": "My cli template",
+  "name": "@zd~/2webp",
+  "version": "0.0.1",
+  "description": "A simple and efficient command-line tool to convert images to WebP format.",
   "author": "zhuddan",
   "license": "MIT",
-  "homepage": "https://github.com/zhuddan/cli#readme",
+  "homepage": "https://github.com/zhuddan/2webp#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zhuddan/cli"
+    "url": "https://github.com/zhuddan/2webp.git"
   },
   "keywords": [
-    "cli"
+    "webp",
+    "image-conversion",
+    "cli",
+    "command-line",
+    "2webp"
   ],
   "bin": {
-    "@zd~/cli": "dist/script.js",
-    "cli": "dist/script.js"
+    "@zd~/2webp": "dist/script.js",
+    "2webp": "dist/script.js"
   },
   "files": [
     "README.md",
@@ -35,7 +39,8 @@
     "test:postinstall": "node postinstall.js || true"
   },
   "dependencies": {
-    "fast-glob": "^3.3.3"
+    "fast-glob": "^3.3.3",
+    "sharp": "^0.34.4"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^5.3.0",

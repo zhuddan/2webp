@@ -16,3 +16,7 @@ export const CONFIG_VERSION = path.join(CONFIG_DIR, '.version')
  * 配置文件版本号
  */
 export const CACHE_FILE_DIR = path.join(CONFIG_DIR, '.cache')
+/**
+ * 默认文件匹配模式
+ */
+export const DEFAULT_PATTERN = '**/*.(png|jpeg|jpg|gif)'

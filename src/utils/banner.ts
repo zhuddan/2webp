@@ -5,7 +5,7 @@ import { getVersionUpdateInfo } from './version'
 
 export function displayBanner(postinstall = false) {
   const bannerMessage = `${chalk.cyan(` ${name}@${version}\n`)}`
-    + `${chalk.cyanBright('cli --help')} ${chalk.gray('查看使用帮助')}`
+    + `${chalk.cyanBright('2webp --help')} ${chalk.gray('查看使用帮助')}`
     + `${getVersionUpdateInfo()}`
     + `\n${postinstall ? `${chalk.greenBright('✅ 安装成功')}` : ''}`
   const box = boxen(bannerMessage, {
