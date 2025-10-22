@@ -1,6 +1,6 @@
 {
   "name": "@zd~/2webp",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "A simple and efficient command-line tool to convert images to WebP format.",
   "author": "zhuddan",
   "license": "MIT",
