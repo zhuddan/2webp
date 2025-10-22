@@ -1,0 +1,52 @@
+{
+  "name": "@zd~/cli",
+  "version": "0.0.7",
+  "description": "My cli template",
+  "author": "zhuddan",
+  "license": "MIT",
+  "homepage": "https://github.com/zhuddan/cli#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhuddan/cli"
+  },
+  "keywords": [
+    "cli"
+  ],
+  "bin": {
+    "@zd~/cli": "dist/script.js",
+    "cli": "dist/script.js"
+  },
+  "files": [
+    "README.md",
+    "dist",
+    "package.json",
+    "postinstall.js",
+    "LICENSE"
+  ],
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup",
+    "bump": "bump",
+    "postinstall": "node postinstall.js || true",
+    "tag": "bump patch --tag --commit --push",
+    "test:cli": "node dist/script.js || true",
+    "test:cli:help": "node dist/script.js --help",
+    "test:cli:version": "node dist/script.js --version",
+    "test:postinstall": "node postinstall.js || true"
+  },
+  "dependencies": {
+    "fast-glob": "^3.3.3"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^5.3.0",
+    "@jsdevtools/version-bump-prompt": "^6.1.0",
+    "@types/node": "^24.3.1",
+    "boxen": "^8.0.1",
+    "chalk": "^5.6.2",
+    "eslint": "^9.35.0",
+    "ora": "^8.2.0",
+    "terser": "^5.44.0",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.2"
+  }
+}
